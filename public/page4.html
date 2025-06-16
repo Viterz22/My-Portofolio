@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body class="dark:text-blue-200">
+    <header class="z-10 sticky top-0 bg-blue-100 dark:bg-blue-950 py-5">
+
+        <nav class="w-9/12 flex flex-row mx-auto">
+
+            <div class="uppercase text-lg basis-1/4"> <!---- LOGO ---->
+                <a href="#hero">
+                    <span class="font-medium text-blue-300 dark:text-white">Raynaldi</span>
+                    <span class="font-extrabold text-blue-950 dark:text-blue-100">Yun</span>
+                    <span class="font-medium text-blue-300 dark:text-white">Viter</span>
+                </a>
+            </div>
+
+            <div class="basis-1/2 flex items-center justify-evenly"> <!---- LINK ---->
+                <a href="index.html"><span class="font-medium underline">Home</span></a>
+            </div>
+
+            <div class="basis-1/4 flex justify-end"> <!---- DARK MODE ---->
+                <input type="checkbox" id="toggle" class="hidden">
+                <label for="toggle">
+                    <div class="w-16 h-8 bg-slate-500 dark:bg-white rounded-full flex items-center p-1 cursor-grabbing">
+                        <img src="img/sun.svg" alt="sun" class="w-7 h-8  rounded-full toggle-circle">
+                        <img src="img/moon.png" alt="sun" class="w-7 h-8  rounded-full toggle-moon hidden">
+                    </div>
+                </label>
+            </div>
+
+        </nav>
+
+    </header>  
+
+        <main id="hero" class="relative">
+        <div class=" bg-blue-100 dark:bg-blue-950"> <!-- Hero Section -->
+            <div class="mx-auto flex items-center">
+                <div class="w-3xl items-center mt-10 mx-auto "> <!-- avatar -->
+                    <img class="rounded-2xl" src="./img/cefr.jpg" alt="sertifikat1">
+                    <div class="text-center mt-5">
+                        <span class="underline hover:bg-blue-200 hover:text-black">Sertifikasi CEPT Periode 2024
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+    </main> 
+    
+    <script>
+        const checkbox = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function(){
+  checkbox.checked ? html.classList.add ('dark') : html.classList.remove('dark') });
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme {
+  --tracking-huruf: .5em; 
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+#toggle:checked ~ label img.toggle-circle {
+  @apply translate-x-6
+}
